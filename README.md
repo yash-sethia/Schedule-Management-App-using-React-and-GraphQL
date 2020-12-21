@@ -1,4 +1,4 @@
-<h1>Schedule Management App<h1>
+<h1>Schedule Management App</h1>
   
   A simple Schedule management app where a user can look att all the things he is suuposed to do today and in the next 4 days.
   
