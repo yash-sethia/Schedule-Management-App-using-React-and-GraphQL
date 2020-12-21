@@ -1,0 +1,119 @@
+body {
+  width: 98.5vw;
+}
+
+.button {
+  padding: 20px;
+  text-align: center;
+}
+
+.display-schedule {
+  margin-top: 3rem;
+}
+
+.schedule {
+  /* border: 1px solid #007bff; */
+  /* margin: 2%;
+  border-radius: 20px; */
+  /* padding: 1%; */
+}
+
+.schedule:hover {
+  /* background-color: #007bff; */
+  color: white;
+  padding: 1.5%;
+  margin-bottom: 2.5%;
+  transform: scaleY(0.2rem);
+}
+
+.date {
+  height: 100%;
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 20px;
+}
+
+.schedule:hover .date, .date:hover {
+  background-color: white !important;
+  color: #007bff !important;
+}
+
+.time {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.details {
+  text-align: center;
+}
+
+.form {
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+/* .form-title > h2 {
+  text-align: center;
+} */
+
+.form-fields {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-date , .form-start-time , .form-end-time {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.form-check-box {
+  padding-top: 10px;
+}
+
+.form-start-time input, .form-end-time input {
+  width: auto;
+}
+
+
+.delete-button {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle; */
+  margin-top: 7%;
+}
+
+/* 
+.delete-button:hover {
+  box-shadow: black 1px;
+} */
+
+
+/* 
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+} */
+
+/* LOADING ANIMATION */
+.loader {
+  height: 90vh;
+  width: 90vw;
+  margin-left: 50vw;
+  margin-top: 35vh;
+}
+
+
+/********************* NEW CSS ****************************/
+.date-day-content {
+  text-align: center;
+}
