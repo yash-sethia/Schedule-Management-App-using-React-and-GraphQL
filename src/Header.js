@@ -30,9 +30,9 @@ function Header() {
         <Navbar expand="lg" variant="light" bg="primary" sticky="top">
             <Container>
                 <Navbar.Brand href="/" style={{color: 'white', fontWeight: 500}}>Schedule Management App</Navbar.Brand>
-                <Nav className="justify-content-end">
-                  <IconButton aria-label="add" style={{color: "white", display: 'inline', fontSize: "50px"}} >
-                    <AddCircleOutlineIcon style={{fontSize: '2rem'}}/>
+                <Nav className="justify-content-end" href='/NewSchedulePageOne'>
+                  <IconButton aria-label="add" style={{color: "white", display: 'inline', fontSize: "50px"}} onClick={() => window.location.href = '/NewSchedulePageOne'} >
+                    <AddCircleOutlineIcon style={{fontSize: '2rem'}} />
                   </IconButton>
                 </Nav>
             </Container>
