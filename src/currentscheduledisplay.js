@@ -127,13 +127,14 @@ function CurrentScheduleDisplay(props) {
     
 
     var currDate = yyyy + '-' + mm + '-' + dd;
-    var currDate1 = yyyy + '-' + mm + '-' + d1.getDate();
-    var currDate2 = yyyy + '-' + mm + '-' + d2.getDate();
-    var currDate3 = yyyy + '-' + mm + '-' + d3.getDate();
-    var currDate4 = yyyy + '-' + mm + '-' + d4.getDate();
+    var currDate1 = yyyy + '-' + mm + '-' + String(d1.getDate()).padStart(2, '0');
+    var currDate2 = yyyy + '-' + mm + '-' + String(d2.getDate()).padStart(2, '0');
+    var currDate3 = yyyy + '-' + mm + '-' + String(d3.getDate()).padStart(2, '0');
+    var currDate4 = yyyy + '-' + mm + '-' + String(d4.getDate()).padStart(2, '0');
     var currTime = today.timeNow()
 
     var temp = -1
+    console.log("Data = ", data);
     const displaySchedule0 = data.Schedule.map(item => {
       var meetDate = item.date[8] + item.date[9]
       if(item.date == currDate && item.endTime > currTime){
@@ -142,13 +143,16 @@ function CurrentScheduleDisplay(props) {
       }
     } )
     const displayScheduleOne = data.Schedule.map(item => {
+      console.log("current date", currDate1)
+      console.log("item date", item.date)
+      console.log("Equality", item.date == currDate1)
       var meetDate = item.date[8] + item.date[9]
       if(item.date === currDate1 ){
         temp = temp + 1;
         return(<Schedule id={item.id} today={false} date={item.date} title={item.title} startTime={item.startTime} endTime={item.endTime} participants={item.participants} bgcolor={bgcolors[temp % 4]} />);
       }
     } )
-    // console.log(displaySchedule0)
+    console.log("Display Schedule = ", displaySchedule0)
     const displaySchedule2 = data.Schedule.map(item => {
       var meetDate = item.date[8] + item.date[9]
       if(item.date === currDate2 ){
